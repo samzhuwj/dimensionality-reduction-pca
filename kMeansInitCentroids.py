@@ -11,8 +11,6 @@ def kmeans_init_centroids(X, K):
     # ===================== Your Code Here =====================
     # Instructions: You should set centroids to randomly chosen examples from
     #               the dataset X
-    #
-
     indices = np.random.randint(X.shape[0], size=K)
     centroids = X[indices]
 

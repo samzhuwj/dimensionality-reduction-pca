@@ -16,8 +16,6 @@ def project_data(X, U, K):
     #                   x = X(i, :)';
     #                   projection_k = x' * U(:, k);
     #                   (above is octave code)
-    #
-
     Ureduce = U[:, np.arange(K)]
     Z = np.dot(X, Ureduce)
 
